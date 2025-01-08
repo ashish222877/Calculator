@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="calculator">
+    <form name="nnn">
+        <input type="text" id="ddd">
+        
+        <div class="btn">
+        <input type="button" value="1" onclick="x.value+=1">
+        <input type="button" value="2" onclick="x.value+=2">
+        <input type="button" value="3" onclick="x.value+=3">
+        <input type="button" id="col" value="+" onclick="x.value+='+'">
+        <input type="button" id="col" value="-" onclick="x.value+='-'">
+        <input type="button" value="4" onclick="x.value+=4">
+        <input type="button" value="5" onclick="x.value+=5">
+        <input type="button" value="6" onclick="x.value+=6">
+        <input type="button" id="col" value="x" onclick="x.value+='*'">
+        <input type="button" id="col" value="/" onclick="x.value+='/'">
+        <input type="button" value="7" onclick="x.value+=7">
+        <input type="button" value="8" onclick="x.value+=8">
+        <input type="button" value="9" onclick="x.value+=9">
+        <input type="button" value="." onclick="x.value+='.'">
+        <input type="button" id='ise' value="=" onclick="x.value=eval(document.getElementById('ddd').value)">
+        <input type="button" id="zero" value="0" onclick="x.value+='0'" >
+        <input type="button" id="col2" value="AC" onclick="x.value=' '">
+        <!-- <input type="button" id="col2" value="C" onclick="x.value=('slice(0,-1).value')"> -->
+        <input type="button" id="col2" value="C" onclick="x.value=x.value.toString().slice(0,-1)">
+
+    </div>
+        
+    </div>
+
+    </form>
+</div>
+    
+
+    <script src="calc.js"></script>
+</body>
+</html>
